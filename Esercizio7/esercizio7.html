@@ -47,13 +47,12 @@
 			<div>
 				<label for="numero-telefonico">Numero Telefonico</label>
 					<input type="tel" id="numero-telefonico" name="numero-telefonico" maxlength="10">
-					<!--Aggiungere restrizioni-->
 			</div>
 		</section>
 		<section>
 			<!--Primo metodo-->
 			<fieldset>
-				<legend><h2>Seleziona il tuo piano di Abbonamento</h2></legend>
+				<legend><h2>Seleziona il tuo piano di abbonamento</h2></legend>
 				<ul>
 					<li>
 						<label for="free">
@@ -85,7 +84,7 @@
 				</label>
 			</fieldset>
 			<!--Secondo metodo-->
-			<label for="abbonamento"><h2>Seleziona il tuo piano di Abbonamento</h2></label>
+			<label for="abbonamento"><h2>Seleziona il tuo piano di abbonamento</h2></label>
 			<select name="abbonamento" id="abbonamento">
 				<option value="free" selected>Free (Nessun Pagamento Richiesto)</option><!--vedere se c'è un modo di mettere il testo in grassetto-->
 				<optgroup label="Premium (a pagamento)">
@@ -100,8 +99,28 @@
 			</select>
 		</section>
 		<section>
-			
+			<h2>Inserisci i dati di pagamento</h2>
+			<div>
+				<label for="numero-carta">Numero Carta</label>
+					<input type="text" id="numero-carta" name="numero-carta" maxlength="19" placeholder="XXXX-XXXX-XXXX-XXXX">
+			</div>
+			<div>
+				<label for="cvc">CVC</label>
+					<input type="text" id="cvc" name="cvc" maxlength="3" placeholder="XXX">
+			</div>
+			<div>
+				<label for="scadenza">Data di Scadenza</label>
+					<input type="month" id="scadenza" name="scadenza">
+			</div>
+			<div>
+				<label for="indirizzo-fatturazione">Indirizzo di fatturazione</label>
+					<input type="text" id="indirizzo-fatturazione" name="indirizzo-fatturazione">
+			</div>
 		</section>
+		<br>
+		<footer>
+			<button type="submit">Invia i dati!</button>
+		</footer>
 	</form>
 </body>
 
