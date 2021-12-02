@@ -1,21 +1,26 @@
 div {
-    width: 30%;
+    width: 200px;
+    height: 530px;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
 article {
-    padding: 20px;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 img {
     width: 100%;
     border-bottom: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 button {
     background-color:dodgerblue;
     color: white;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid;
