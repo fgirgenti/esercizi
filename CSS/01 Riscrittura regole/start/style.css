@@ -1,10 +1,18 @@
+:root {
+    --background: #011212;
+    --colore-sfera: #ff8800;
+    --sfera: 50px;
+    --dimensione: 100px;
+}
+
 body {
-    background-color: #011212;
+    background-color: var(--background);
 }
 
 .ball {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8800;
-    border-radius: 50px;
+    width: var(--dimensione);
+    height: var(--dimensione);
+    background-color: var(--colore-sfera);
+    border-radius: var(--sfera);
 }
+
