@@ -20,4 +20,20 @@ body {
 	border: 1px solid;
 	border-radius: 3px;
 	transition: 0.3s;
+	height: 15px;
+	overflow: hidden;
 } 
+
+#expand-toggle:checked ~ #expand-btn {
+	background-color: #88ff88;		
+}
+
+#expand-toggle:checked ~ #expand-btn::before {
+	content: 'Nascondi righe';
+	display: block;
+	margin-bottom: 100px;	
+}
+
+#expand-toggle:checked ~ table .expandable {
+	visibility: visible;
+}
