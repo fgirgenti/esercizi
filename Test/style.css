@@ -66,7 +66,7 @@ body {
     }
 }
 
-@media screen and (min-width: 428px) and (max-width: 833px) {
+@media screen and (max-width: 833px) {
     body {
          margin-left: 34px;
     }
