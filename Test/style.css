@@ -12,7 +12,7 @@ body {
 }
 
 .card {
-    flex-basis: 360px;
+    flex-basis: 22.5rem;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg,#A1A1A1,#F2F2F2);
@@ -30,7 +30,7 @@ body {
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .user {
@@ -40,7 +40,7 @@ body {
 
 .avatar {
     background-color: white;
-    width: 50px;
+    width: 3rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
@@ -48,11 +48,11 @@ body {
 .icons {
     display: flex;
     column-gap: 1rem;
-    margin: 25px 0 13px 25px;
+    margin: 1.5rem 0 1rem 1.5rem;
 }
 
 .description {
-    padding: 0 10px 42px;
+    padding: 0 1rem 2.5rem;
 }
 
 .description p {
