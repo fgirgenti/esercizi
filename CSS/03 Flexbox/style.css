@@ -6,7 +6,7 @@ body {
 
 .sidebar {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     column-gap: 50px;
     width: 200px;
     height: 100vh;
@@ -37,7 +37,7 @@ body {
 
 .fondo {
     margin: 10px;
-    align-self: flex-end;
+    margin-top: auto;
 }
 
 .avatar {

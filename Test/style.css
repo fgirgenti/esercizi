@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 150px;
+    margin-left: 150px;
+    transition-duration: 0.5s;
+}
+
+.card {
+    width: 360px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg,#A1A1A1,#F2F2F2);
+    border-radius: 1.5rem;  
+}
+
+.info p {
+    color: white;
+}
+
+.puntini p {
+    font-size: 2rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.user {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.avatar {
+    background-color: white;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    column-gap: 1rem;
+    margin: 25px 0 13px 25px;
+}
+
+.description {
+    padding: 0 10px;
+}
+
+.description p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 834px) and (max-width: 1439px) {
+    body {
+         margin-left: 42px;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 833px) {
+    body {
+         margin-left: 34px;
+    }
+}
+
+
+
+
