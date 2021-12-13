@@ -12,8 +12,7 @@ body {
 }
 
 .card {
-    width: 360px;
-    height: 520px;
+    flex-basis: 360px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg,#A1A1A1,#F2F2F2);
@@ -53,7 +52,7 @@ body {
 }
 
 .description {
-    padding: 0 10px;
+    padding: 0 10px 42px;
 }
 
 .description p {
