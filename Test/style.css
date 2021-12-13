@@ -19,14 +19,6 @@ body {
     border-radius: 1.5rem;  
 }
 
-.info p {
-    color: white;
-}
-
-.puntini p {
-    font-size: 2rem;
-}
-
 .head {
     display: flex;
     justify-content: space-between;
@@ -43,6 +35,14 @@ body {
     width: 3rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+}
+
+.info p {
+    color: white;
+}
+
+.puntini p {
+    font-size: 2rem;
 }
 
 .icons {
