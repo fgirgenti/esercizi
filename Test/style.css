@@ -9,7 +9,6 @@ body {
     row-gap: 2rem;
     margin-top: 150px;
     margin-left: 150px;
-    transition-duration: 0.5s;
 }
 
 .card {
