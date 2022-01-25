@@ -1,5 +1,5 @@
 function pow(base) {
-  return (exp) => Math.pow(base,exp);
+  return (exp) => base ** exp;
 }
 
 const pow2 = pow(2);
