@@ -1,9 +1,11 @@
 function memoize(fn) {
-  let cache = {5: 120};
+  let cache = {};
   return function (n) {
       if (n in cache) {
+        console.log(`Fetching from cache for ${n}`)
         return cache[n];
       }
+  console.log(`Calculating result for ${n}`)    
   return cache[n] = fn(n);
   }
 }
@@ -16,7 +18,7 @@ function factorial(x) {
   return x * factorial(x - 1);
 }
 
-factorial = memoize(factorial);
-console.log(factorial(10));
-console.log(factorial(6));
-console.log(factorial(5));
+const fact = memoize(factorial);
+console.log(fact(10));
+console.log(fact(6));
+console.log(fact(5));
