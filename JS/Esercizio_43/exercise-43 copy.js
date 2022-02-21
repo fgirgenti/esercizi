@@ -30,9 +30,19 @@ class BankAccount {
   }
 }
 
-class NegativeAmount extends Error {};
+class NegativeAmount extends Error {
+  constructor(message){
+    super(message);
+    this.name = 'Negative Amount';
+  }
+};
 
-class MoreThanBalance extends Error {};
+class MoreThanBalance extends Error {
+  constructor(message){
+    super(message);
+    this.name = 'More than balance';
+  }
+};
 
 try {
   const bankAccount = new BankAccount(1000);
@@ -41,6 +51,6 @@ try {
   bankAccount.withdraw(10000);
   bankAccount.view();
 } catch (e) {
-  console.log('Something went wrong during bank account operations');
+  console.log(e.name, e.message);
 }
 
