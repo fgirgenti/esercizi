@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div id="container">
+      <ul class="todo-list"></ul>
+    </div>
+  </body>
+</html>
+
+<script>
+
+  function createList (li) {
+    const newLi = document.createElement('li');
+    newLi.innerText = li;
+    document.querySelector('.todo-list').append(newLi);
+  }
+  
+  function fetchTodos(){
+    fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+    .then(todos => todos.forEach(element => createList(element.title)))
+    .catch(e => console.log(e))
+  }
+
+  fetchTodos();
+
+</script>

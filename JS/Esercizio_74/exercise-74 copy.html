@@ -1,0 +1,46 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's Form</h2>
+      <form id="person-form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+
+  function createInput(labelText, inputType, inputID) {
+    const newDiv = document.createElement('div');
+    const newLabel = document.createElement('label');
+    const newInput = document.createElement('input');
+    newLabel.innerText = labelText;
+    newInput.type = inputType;
+    newInput.id = inputID;
+    newDiv.append(newLabel, newInput);
+    document.getElementById('person-form').prepend(newDiv);
+  }
+
+  function initForm() {
+    createInput('Age', 'number', 'age');
+    createInput('Last Name:', 'text', 'lastName');
+    createInput('First Name:', 'text', 'firstName');
+  }
+
+  initForm();
+
+  function submitPersonForm() {
+    event.preventDefault();
+    const person = {
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      age: document.getElementById('age').value
+    }
+    console.log(person);
+  }
+
+  const button = document.querySelector('button');
+  button.addEventListener('click', submitPersonForm);
+
+</script>

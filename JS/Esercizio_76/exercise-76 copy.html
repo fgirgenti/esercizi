@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Hero's List</h2>
+      <ul class="hero-list">
+        <li class="hero-list-item">Batman</li>
+        <li class="hero-list-item">Superman</li>
+        <li class="hero-list-item">Spiderman</li>
+        <li class="hero-list-item">Hulk</li>
+        <li class="hero-list-item">Wolverine</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<script>
+
+  function turnRed() {
+    event.target.style = "color: red";
+  }
+
+  function defaultColor() {
+    event.target.style = "default";
+  }
+
+  const list = document.querySelectorAll('.hero-list-item');
+  list.forEach(element => element.addEventListener('mouseenter', turnRed));
+  list.forEach(element => element.addEventListener('mouseleave', defaultColor));
+
+</script>

@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+  
+  function createH2 (title) {
+    const h2 = document.createElement('h2');
+    h2.innerText = title;
+    return h2;
+  }
+
+  function createCheckbox (completed) {
+    const input = document.createElement('input');
+    input.type = "checkbox";
+    input.checked = completed;
+    return input;
+  }
+
+  function fetchTodos(){
+    fetch('https://jsonplaceholder.typicode.com/todos/4')
+    .then(response => response.json())
+    .then((todo) => { 
+      const container = document.querySelector('#container');
+      const h2 = createH2(todo.title);
+      const checkbox = createCheckbox(todo.completed);
+      container.append(checkbox);
+      container.append(h2);
+    })
+    .catch(e => console.log(e));
+  }
+
+  fetchTodos();
+
+</script>
